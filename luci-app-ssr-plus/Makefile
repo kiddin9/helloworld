@@ -6,6 +6,10 @@ PKG_RELEASE:=8
 
 include $(INCLUDE_DIR)/package.mk
 
+define Package/$(PKG_NAME)/conffiles
+/etc/config/shadowsocksr
+endef
+
 define Package/$(PKG_NAME)/config
 config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_plugin
 	bool "Include Shadowsocks V2ray Plugin"
