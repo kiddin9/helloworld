@@ -169,7 +169,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_DNSPROXY
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_MosDNS
 	bool "Include MosDNS"
-	default y if aarch64||arm||i386||x86_64
+	default y if aarch64||i386||x86_64
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Hysteria
 	bool "Include Hysteria"
